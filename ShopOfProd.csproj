@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4846C8D3-5613-4B0C-8C9B-F6028F30F043}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ShopOfProd</RootNamespace>
+    <AssemblyName>ShopOfProd</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.12.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Caching.Memory.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Configuration.Binder.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.3.1.3\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.1.7.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.4.7.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutApplication.Designer.cs">
+      <DependentUpon>AboutApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCategory.Designer.cs">
+      <DependentUpon>AddNewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInterface.Designer.cs">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllProducts.Designer.cs">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllUsersForm.Designer.cs">
+      <DependentUpon>AllUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationForm.Designer.cs">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuthorizationFormTrue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthorizationFormTrue.Designer.cs">
+      <DependentUpon>AuthorizationFormTrue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Context\MyDbContext.cs" />
+    <Compile Include="DBmodels.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodels.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBmodels.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodels.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBmodels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodels.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemBasket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemBasket.Designer.cs">
+      <DependentUpon>ItemBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemOrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemOrderList.Designer.cs">
+      <DependentUpon>ItemOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KassirInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KassirInterface.Designer.cs">
+      <DependentUpon>KassirInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItemProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListItemProduct.Designer.cs">
+      <DependentUpon>ListItemProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListUserItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListUserItem.Designer.cs">
+      <DependentUpon>ListUserItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeatProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeatProducts.Designer.cs">
+      <DependentUpon>MeatProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005022003183_AddLogPass.cs" />
+    <Compile Include="Migrations\202005022003183_AddLogPass.designer.cs">
+      <DependentUpon>202005022003183_AddLogPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005042006019_orderrr.cs" />
+    <Compile Include="Migrations\202005042006019_orderrr.designer.cs">
+      <DependentUpon>202005042006019_orderrr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051130078_collect.cs" />
+    <Compile Include="Migrations\202005051130078_collect.designer.cs">
+      <DependentUpon>202005051130078_collect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051136496_adduserID.cs" />
+    <Compile Include="Migrations\202005051136496_adduserID.designer.cs">
+      <DependentUpon>202005051136496_adduserID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051159262_deleteVirt.cs" />
+    <Compile Include="Migrations\202005051159262_deleteVirt.designer.cs">
+      <DependentUpon>202005051159262_deleteVirt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051222489_Icollecting.cs" />
+    <Compile Include="Migrations\202005051222489_Icollecting.designer.cs">
+      <DependentUpon>202005051222489_Icollecting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051246181_TEST.cs" />
+    <Compile Include="Migrations\202005051246181_TEST.designer.cs">
+      <DependentUpon>202005051246181_TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005051322527_AddForeignKey.cs" />
+    <Compile Include="Migrations\202005051322527_AddForeignKey.designer.cs">
+      <DependentUpon>202005051322527_AddForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052024037_EntityCollectionAdd.cs" />
+    <Compile Include="Migrations\202005052024037_EntityCollectionAdd.designer.cs">
+      <DependentUpon>202005052024037_EntityCollectionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052100063_EntityColletADd.cs" />
+    <Compile Include="Migrations\202005052100063_EntityColletADd.designer.cs">
+      <DependentUpon>202005052100063_EntityColletADd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052105518_zaebalo.cs" />
+    <Compile Include="Migrations\202005052105518_zaebalo.designer.cs">
+      <DependentUpon>202005052105518_zaebalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052142240_zze.cs" />
+    <Compile Include="Migrations\202005052142240_zze.designer.cs">
+      <DependentUpon>202005052142240_zze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052151120_za.cs" />
+    <Compile Include="Migrations\202005052151120_za.designer.cs">
+      <DependentUpon>202005052151120_za.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005052223162_vsePolutchitsya.cs" />
+    <Compile Include="Migrations\202005052223162_vsePolutchitsya.designer.cs">
+      <DependentUpon>202005052223162_vsePolutchitsya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CategoryProducts.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="OrderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderItem.Designer.cs">
+      <DependentUpon>OrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingBasket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoppingBasket.Designer.cs">
+      <DependentUpon>ShoppingBasket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartPage.Designer.cs">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOrders.Designer.cs">
+      <DependentUpon>UserOrders.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewCategory.resx">
+      <DependentUpon>AddNewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemOrderList.resx">
+      <DependentUpon>ItemOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KassirInterface.resx">
+      <DependentUpon>KassirInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOrders.resx">
+      <DependentUpon>UserOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\user-icon.png" />
+    <EmbeddedResource Include="AboutApplication.resx">
+      <DependentUpon>AboutApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInterface.resx">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllProducts.resx">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUsersForm.resx">
+      <DependentUpon>AllUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationForm.resx">
+      <DependentUpon>AuthorizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthorizationFormTrue.resx">
+      <DependentUpon>AuthorizationFormTrue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemBasket.resx">
+      <DependentUpon>ItemBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListItemProduct.resx">
+      <DependentUpon>ListItemProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListUserItem.resx">
+      <DependentUpon>ListUserItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeatProducts.resx">
+      <DependentUpon>MeatProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005022003183_AddLogPass.resx">
+      <DependentUpon>202005022003183_AddLogPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005042006019_orderrr.resx">
+      <DependentUpon>202005042006019_orderrr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051130078_collect.resx">
+      <DependentUpon>202005051130078_collect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051136496_adduserID.resx">
+      <DependentUpon>202005051136496_adduserID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051159262_deleteVirt.resx">
+      <DependentUpon>202005051159262_deleteVirt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051222489_Icollecting.resx">
+      <DependentUpon>202005051222489_Icollecting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051246181_TEST.resx">
+      <DependentUpon>202005051246181_TEST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005051322527_AddForeignKey.resx">
+      <DependentUpon>202005051322527_AddForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052024037_EntityCollectionAdd.resx">
+      <DependentUpon>202005052024037_EntityCollectionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052100063_EntityColletADd.resx">
+      <DependentUpon>202005052100063_EntityColletADd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052105518_zaebalo.resx">
+      <DependentUpon>202005052105518_zaebalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052142240_zze.resx">
+      <DependentUpon>202005052142240_zze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052151120_za.resx">
+      <DependentUpon>202005052151120_za.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005052223162_vsePolutchitsya.resx">
+      <DependentUpon>202005052223162_vsePolutchitsya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoppingBasket.resx">
+      <DependentUpon>ShoppingBasket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="DBmodels.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBmodels.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBmodels.edmx.diagram">
+      <DependentUpon>DBmodels.edmx</DependentUpon>
+    </None>
+    <None Include="Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart.png" />
+    <None Include="Resources\food-and-restaurant-icon-coffee-icon-coffee-shop-icon-blue-text-light-logo-electric-blue-lighting-symbol-png-clipart.jpg" />
+    <None Include="Resources\32132.png" />
+    <None Include="Resources\d58f191c768aa2c0938298ca5232aed8.png" />
+    <None Include="Resources\imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK.jpg" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="DBmodels.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DBmodels.Context.cs</LastGenOutput>
+      <DependentUpon>DBmodels.edmx</DependentUpon>
+    </Content>
+    <Content Include="DBmodels.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBmodels.edmx</DependentUpon>
+      <LastGenOutput>DBmodels.cs</LastGenOutput>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>
