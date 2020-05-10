@@ -38,8 +38,8 @@ namespace ShopOfProd
             user.LogName = txtLogin.Text.Trim();
             user.Password = txtPassword.Text.Trim();
             MatchCollection matchesuser = regexuser.Matches(user.FullName);
-            MatchCollection matchlog = regexuser.Matches(user.FullName);
-            MatchCollection matchpass = regexuser.Matches(user.FullName);
+            MatchCollection matchlog = regexuser.Matches(user.LogName);
+            MatchCollection matchpass = regexuser.Matches(user.Password);
 
             using (var context = new MyDbContext())
             {
@@ -47,16 +47,16 @@ namespace ShopOfProd
                 {
                     MessageBox.Show("Не все поля введены");
                 }
-                else if (matchesuser.Count == 0)
+                else if (matchesuser.Count != 0)
                 {
                     MessageBox.Show("Введите корректное имя(минимум 3 символа)");
                 }
-                else if(matchlog.Count == 0)
+                else if(matchlog.Count != 0)
                 {
                     MessageBox.Show("Введите корректный логин(минимум 3 символа)");
 
                 }
-                else if (matchpass.Count == 0)
+                else if (matchpass.Count != 0)
                 {
                     MessageBox.Show("Введите корректный пароль(минимум 3 символа)");
 

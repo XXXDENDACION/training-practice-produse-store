@@ -63,7 +63,6 @@ C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.Migrations.AddLogPas
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.Profile.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.ListItem.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.MeatProducts.resources
-C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.csprojAssemblyReference.cache
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.AdminInterface.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.AllUsersForm.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.ListUserItem.resources
@@ -90,3 +89,9 @@ C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.UserOrders.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.ItemOrderList.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.KassirInterface.resources
 C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.AddNewCategory.resources
+C:\Users\Danik\source\repos\ShopOfProd\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Danik\source\repos\ShopOfProd\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.Migrations.addPhoto.resources
+C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.csprojAssemblyReference.cache
+C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.Migrations.addphotouser.resources
+C:\Users\Danik\source\repos\ShopOfProd\obj\Debug\ShopOfProd.AllProductsGuest.resources

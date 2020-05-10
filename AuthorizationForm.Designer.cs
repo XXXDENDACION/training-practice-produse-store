@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.txtFullname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,24 +36,8 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
-            // 
-            // btnEXIT
-            // 
-            this.btnEXIT.FlatAppearance.BorderSize = 0;
-            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconSize = 80;
-            this.btnEXIT.Location = new System.Drawing.Point(1, -1);
-            this.btnEXIT.Name = "btnEXIT";
-            this.btnEXIT.Rotation = 0D;
-            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
-            this.btnEXIT.TabIndex = 2;
-            this.btnEXIT.UseVisualStyleBackColor = true;
-            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
             // 
             // txtFullname
             // 
@@ -140,6 +123,23 @@
             this.label4.Text = "Пароль";
             this.label4.UseMnemonic = false;
             // 
+            // btnEXIT
+            // 
+            this.btnEXIT.FlatAppearance.BorderSize = 0;
+            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconSize = 80;
+            this.btnEXIT.Location = new System.Drawing.Point(1, -1);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Rotation = 0D;
+            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
+            this.btnEXIT.TabIndex = 2;
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
             // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,7 +157,7 @@
             this.Controls.Add(this.btnEXIT);
             this.Name = "AuthorizationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AuthorizationForm";
+            this.Text = "Регистрация";
             this.ResumeLayout(false);
             this.PerformLayout();
 

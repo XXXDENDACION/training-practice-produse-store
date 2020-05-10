@@ -30,11 +30,11 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,46 @@
             this.panel1.Size = new System.Drawing.Size(100, 561);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button2.Location = new System.Drawing.Point(3, 220);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 35);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Отсортировать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 193);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(94, 21);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // btnEXIT
+            // 
+            this.btnEXIT.FlatAppearance.BorderSize = 0;
+            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconSize = 80;
+            this.btnEXIT.Location = new System.Drawing.Point(3, 0);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Rotation = 0D;
+            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
+            this.btnEXIT.TabIndex = 4;
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label2);
@@ -79,46 +119,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Ассортимент продуктов";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 193);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(94, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button2.Location = new System.Drawing.Point(3, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 35);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Отсортировать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnEXIT
-            // 
-            this.btnEXIT.FlatAppearance.BorderSize = 0;
-            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconSize = 80;
-            this.btnEXIT.Location = new System.Drawing.Point(3, 0);
-            this.btnEXIT.Name = "btnEXIT";
-            this.btnEXIT.Rotation = 0D;
-            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
-            this.btnEXIT.TabIndex = 4;
-            this.btnEXIT.UseVisualStyleBackColor = true;
-            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
-            // 
             // MeatProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,7 +131,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MeatProducts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MeatProducts";
+            this.Text = "Продукты";
             this.Load += new System.EventHandler(this.MeatProducts_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

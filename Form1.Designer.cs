@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.panelSubFAQ = new System.Windows.Forms.Panel();
             this.btnVersion = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnClientandCassir = new System.Windows.Forms.Button();
-            this.panelSubLC = new System.Windows.Forms.Panel();
-            this.btnHistory = new System.Windows.Forms.Button();
-            this.btnProf = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnFAQ = new FontAwesome.Sharp.IconButton();
             this.btnBasket = new FontAwesome.Sharp.IconButton();
             this.btnPROD = new FontAwesome.Sharp.IconButton();
+            this.panelSubLC = new System.Windows.Forms.Panel();
+            this.btnHistory = new System.Windows.Forms.Button();
+            this.btnProf = new System.Windows.Forms.Button();
             this.btnLC = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSubFAQ.SuspendLayout();
             this.panelSubLC.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelChildForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -72,6 +72,28 @@
             this.panelSideMenu.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelSideMenu.Size = new System.Drawing.Size(206, 561);
             this.panelSideMenu.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconSize = 28;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 568);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnExit.Rotation = 0D;
+            this.btnExit.Size = new System.Drawing.Size(189, 51);
+            this.btnExit.TabIndex = 13;
+            this.btnExit.Text = "Выйти";
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panelSubFAQ
             // 
@@ -132,117 +154,6 @@
             this.btnClientandCassir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientandCassir.UseVisualStyleBackColor = true;
             this.btnClientandCassir.Click += new System.EventHandler(this.button15_Click_1);
-            // 
-            // panelSubLC
-            // 
-            this.panelSubLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelSubLC.Controls.Add(this.btnHistory);
-            this.panelSubLC.Controls.Add(this.btnProf);
-            this.panelSubLC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubLC.Location = new System.Drawing.Point(0, 189);
-            this.panelSubLC.Name = "panelSubLC";
-            this.panelSubLC.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panelSubLC.Size = new System.Drawing.Size(189, 90);
-            this.panelSubLC.TabIndex = 7;
-            this.panelSubLC.TabStop = true;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.ForeColor = System.Drawing.Color.LightGray;
-            this.btnHistory.Location = new System.Drawing.Point(0, 40);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnHistory.Size = new System.Drawing.Size(189, 40);
-            this.btnHistory.TabIndex = 2;
-            this.btnHistory.Text = "История покупок";
-            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.UseVisualStyleBackColor = true;
-            this.btnHistory.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // btnProf
-            // 
-            this.btnProf.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProf.FlatAppearance.BorderSize = 0;
-            this.btnProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProf.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProf.Location = new System.Drawing.Point(0, 0);
-            this.btnProf.Name = "btnProf";
-            this.btnProf.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProf.Size = new System.Drawing.Size(189, 40);
-            this.btnProf.TabIndex = 1;
-            this.btnProf.Text = "Профиль";
-            this.btnProf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProf.UseVisualStyleBackColor = true;
-            this.btnProf.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(189, 136);
-            this.panelLogo.TabIndex = 1;
-            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(206, 495);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(728, 66);
-            this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panelChildForm
-            // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panelChildForm.Controls.Add(this.label1);
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(206, 0);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(728, 495);
-            this.panelChildForm.TabIndex = 2;
-            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(74, 136);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(589, 156);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Вы находитесь в главном меню \r\nуправления  у клиента\r\nПолный функционал пользоват" +
-    "еля\r\nвы можете наблюдать слева\r\n";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnExit.IconSize = 28;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 568);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnExit.Rotation = 0D;
-            this.btnExit.Size = new System.Drawing.Size(189, 51);
-            this.btnExit.TabIndex = 13;
-            this.btnExit.Text = "Выйти";
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnFAQ
             // 
@@ -312,6 +223,51 @@
             this.btnPROD.UseVisualStyleBackColor = true;
             this.btnPROD.Click += new System.EventHandler(this.iconButton2_Click_1);
             // 
+            // panelSubLC
+            // 
+            this.panelSubLC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelSubLC.Controls.Add(this.btnHistory);
+            this.panelSubLC.Controls.Add(this.btnProf);
+            this.panelSubLC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubLC.Location = new System.Drawing.Point(0, 189);
+            this.panelSubLC.Name = "panelSubLC";
+            this.panelSubLC.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panelSubLC.Size = new System.Drawing.Size(189, 90);
+            this.panelSubLC.TabIndex = 7;
+            this.panelSubLC.TabStop = true;
+            // 
+            // btnHistory
+            // 
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistory.FlatAppearance.BorderSize = 0;
+            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHistory.ForeColor = System.Drawing.Color.LightGray;
+            this.btnHistory.Location = new System.Drawing.Point(0, 40);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnHistory.Size = new System.Drawing.Size(189, 40);
+            this.btnHistory.TabIndex = 2;
+            this.btnHistory.Text = "История покупок";
+            this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.UseVisualStyleBackColor = true;
+            this.btnHistory.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // btnProf
+            // 
+            this.btnProf.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProf.FlatAppearance.BorderSize = 0;
+            this.btnProf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProf.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProf.Location = new System.Drawing.Point(0, 0);
+            this.btnProf.Name = "btnProf";
+            this.btnProf.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnProf.Size = new System.Drawing.Size(189, 40);
+            this.btnProf.TabIndex = 1;
+            this.btnProf.Text = "Профиль";
+            this.btnProf.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProf.UseVisualStyleBackColor = true;
+            this.btnProf.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // btnLC
             // 
             this.btnLC.Dock = System.Windows.Forms.DockStyle.Top;
@@ -334,6 +290,16 @@
             this.btnLC.UseVisualStyleBackColor = true;
             this.btnLC.Click += new System.EventHandler(this.iconButton1_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(189, 136);
+            this.panelLogo.TabIndex = 1;
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ShopOfProd.Properties.Resources._257_2572499_close_shopping_cart_light_gray_shopping_cart;
@@ -343,6 +309,40 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(206, 495);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(728, 66);
+            this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelChildForm.Controls.Add(this.label1);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(206, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(728, 495);
+            this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(133, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(457, 124);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Вы находитесь в главном меню \r\nуправления  у клиента\r\nПолный функционал пользоват" +
+    "еля\r\nвы можете наблюдать слева\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -357,15 +357,15 @@
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Интерфейс клиента";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelSubFAQ.ResumeLayout(false);
             this.panelSubLC.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

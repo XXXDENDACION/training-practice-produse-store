@@ -56,7 +56,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(360, 13);
+            this.label2.Location = new System.Drawing.Point(368, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 39);
             this.label2.TabIndex = 7;
@@ -90,21 +90,21 @@
             // 
             // txtFullname
             // 
-            this.txtFullname.Location = new System.Drawing.Point(393, 151);
+            this.txtFullname.Location = new System.Drawing.Point(388, 151);
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(118, 20);
             this.txtFullname.TabIndex = 12;
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(393, 263);
+            this.txtLogin.Location = new System.Drawing.Point(388, 262);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(118, 20);
             this.txtLogin.TabIndex = 13;
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(393, 371);
+            this.txtStatus.Location = new System.Drawing.Point(383, 369);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(123, 20);
             this.txtStatus.TabIndex = 14;
@@ -113,9 +113,9 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(327, 448);
+            this.button1.Location = new System.Drawing.Point(333, 429);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 52);
             this.button1.TabIndex = 15;
@@ -158,7 +158,7 @@
             this.Controls.Add(this.btnEXIT);
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Profile";
+            this.Text = "Профиль";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -206,11 +206,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(249, 159);
+            this.label1.Location = new System.Drawing.Point(325, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(589, 156);
+            this.label1.Size = new System.Drawing.Size(457, 124);
             this.label1.TabIndex = 2;
             this.label1.Text = "Вы находитесь в главном меню \r\nуправления  у кассира\r\nПолный функционал пользоват" +
     "еля\r\nвы можете наблюдать слева\r\n";
@@ -226,7 +226,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "KassirInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "KassirInterface";
+            this.Text = "Интерфейс кассира";
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSubFAQ.ResumeLayout(false);

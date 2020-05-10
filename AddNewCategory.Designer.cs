@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,23 +47,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(95, 561);
             this.panel1.TabIndex = 0;
-            // 
-            // btnEXIT
-            // 
-            this.btnEXIT.FlatAppearance.BorderSize = 0;
-            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconSize = 80;
-            this.btnEXIT.Location = new System.Drawing.Point(3, 3);
-            this.btnEXIT.Name = "btnEXIT";
-            this.btnEXIT.Rotation = 0D;
-            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
-            this.btnEXIT.TabIndex = 8;
-            this.btnEXIT.UseVisualStyleBackColor = true;
-            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
             // 
             // panel2
             // 
@@ -118,6 +101,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnEXIT
+            // 
+            this.btnEXIT.FlatAppearance.BorderSize = 0;
+            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconSize = 80;
+            this.btnEXIT.Location = new System.Drawing.Point(3, 3);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Rotation = 0D;
+            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
+            this.btnEXIT.TabIndex = 8;
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
             // AddNewCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,7 +130,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AddNewCategory";
-            this.Text = "AddNewCategory";
+            this.Text = "Новая категория";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

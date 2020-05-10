@@ -177,7 +177,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ShoppingBasket";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ShoppingBasket";
+            this.Text = "Корзина";
             this.Load += new System.EventHandler(this.ShoppingBasket_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

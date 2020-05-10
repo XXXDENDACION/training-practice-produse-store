@@ -33,6 +33,7 @@ namespace ShopOfProd
                 {
                     context.CategoryProduct.Add(cat);
                     context.SaveChanges();
+                    MessageBox.Show("Новая категория добавлена");
                     AddProduct add = new AddProduct();
                     add.Show();
                     Close();

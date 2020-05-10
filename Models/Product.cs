@@ -17,6 +17,7 @@ namespace ShopOfProd.Models
         [ForeignKey("categoryId")]
         public CategoryProducts Category { get; set; }
         public int Price { get; set; }
+        public string Photo { get; set; }
         public virtual ICollection<Order> orders { get; set; }
     }
 }

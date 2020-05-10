@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -37,10 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.5.12.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
@@ -86,6 +85,10 @@
     </Reference>
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.Primitives.3.1.3\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -157,6 +160,12 @@
     </Compile>
     <Compile Include="AllProducts.Designer.cs">
       <DependentUpon>AllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllProductsGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllProductsGuest.Designer.cs">
+      <DependentUpon>AllProductsGuest.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUsersForm.cs">
       <SubType>Form</SubType>
@@ -296,6 +305,14 @@
     <Compile Include="Migrations\202005052223162_vsePolutchitsya.designer.cs">
       <DependentUpon>202005052223162_vsePolutchitsya.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005101009438_addPhoto.cs" />
+    <Compile Include="Migrations\202005101009438_addPhoto.Designer.cs">
+      <DependentUpon>202005101009438_addPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005101406536_addphotouser.cs" />
+    <Compile Include="Migrations\202005101406536_addphotouser.Designer.cs">
+      <DependentUpon>202005101406536_addphotouser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoryProducts.cs" />
     <Compile Include="Models\Order.cs" />
@@ -315,6 +332,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingBasket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,20 +349,43 @@
     <Compile Include="StartPage.Designer.cs">
       <DependentUpon>StartPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="StorageImages.cs" />
     <Compile Include="UserOrders.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserOrders.Designer.cs">
       <DependentUpon>UserOrders.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\fd80ecec48eba2a9adb76e4133905879.png" />
+    <None Include="Resources\29-294515_food-clipart-transparent-background-food-logo-no-background.png" />
+    <None Include="Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart3.png" />
+    <None Include="Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart2.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\user-icon1.png" />
+    <None Include="Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart1.png" />
+    <None Include="Resources\shop-icon-png-21.png" />
+    <None Include="Resources\shop-icon-png-2.png" />
     <EmbeddedResource Include="AddNewCategory.resx">
       <DependentUpon>AddNewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllProductsGuest.resx">
+      <DependentUpon>AllProductsGuest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemOrderList.resx">
       <DependentUpon>ItemOrderList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KassirInterface.resx">
       <DependentUpon>KassirInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005101009438_addPhoto.resx">
+      <DependentUpon>202005101009438_addPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005101406536_addphotouser.resx">
+      <DependentUpon>202005101406536_addphotouser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UserOrders.resx">
       <DependentUpon>UserOrders.cs</DependentUpon>
@@ -441,23 +486,9 @@
       <DependentUpon>DBmodels.edmx</DependentUpon>
     </None>
     <None Include="Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart.png" />
-    <None Include="Resources\food-and-restaurant-icon-coffee-icon-coffee-shop-icon-blue-text-light-logo-electric-blue-lighting-symbol-png-clipart.jpg" />
-    <None Include="Resources\32132.png" />
-    <None Include="Resources\d58f191c768aa2c0938298ca5232aed8.png" />
-    <None Include="Resources\imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK.jpg" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Content Include="DBmodels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DBmodels.Context.cs</LastGenOutput>
@@ -496,12 +527,4 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
-  </Target>
-  <Import Project="packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
 </Project>

@@ -73,9 +73,9 @@ namespace ShopOfProd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _32132 {
+        internal static System.Drawing.Bitmap _29_294515_food_clipart_transparent_background_food_logo_no_background {
             get {
-                object obj = ResourceManager.GetObject("32132", resourceCulture);
+                object obj = ResourceManager.GetObject("29-294515_food-clipart-transparent-background-food-logo-no-background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ShopOfProd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap d58f191c768aa2c0938298ca5232aed8 {
+        internal static System.Drawing.Bitmap fd80ecec48eba2a9adb76e4133905879 {
             get {
-                object obj = ResourceManager.GetObject("d58f191c768aa2c0938298ca5232aed8", resourceCulture);
+                object obj = ResourceManager.GetObject("fd80ecec48eba2a9adb76e4133905879", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,20 +93,9 @@ namespace ShopOfProd.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap food_and_restaurant_icon_coffee_icon_coffee_shop_icon_blue_text_light_logo_electric_blue_lighting_symbol_png_clipart {
+        internal static System.Drawing.Bitmap shop_icon_png_2 {
             get {
-                object obj = ResourceManager.GetObject("food-and-restaurant-icon-coffee-icon-coffee-shop-icon-blue-text-light-logo-electr" +
-                        "ic-blue-lighting-symbol-png-clipart", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap imgbin_shopify_e_commerce_logo_web_design_design_qXjMADSvFauX9EM7aNwbpi2UK {
-            get {
-                object obj = ResourceManager.GetObject("imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK", resourceCulture);
+                object obj = ResourceManager.GetObject("shop-icon-png-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

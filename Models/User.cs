@@ -18,6 +18,7 @@ namespace ShopOfProd.Models
         [Required]
         public string Password { get; set; }
         public string Status { get; set; }
+        public string Photo { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
         
         

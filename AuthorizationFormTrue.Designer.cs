@@ -35,6 +35,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEXIT = new FontAwesome.Sharp.IconButton();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -93,7 +94,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(301, 393);
+            this.button1.Location = new System.Drawing.Point(301, 380);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 52);
             this.button1.TabIndex = 14;
@@ -118,12 +119,27 @@
             this.btnEXIT.UseVisualStyleBackColor = true;
             this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button2.Location = new System.Drawing.Point(301, 450);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(325, 52);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Войти как гость";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // AuthorizationFormTrue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLogin);
@@ -134,7 +150,7 @@
             this.ForeColor = System.Drawing.Color.Coral;
             this.Name = "AuthorizationFormTrue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AuthorizationFormTrue";
+            this.Text = "Авторизация";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +165,6 @@
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

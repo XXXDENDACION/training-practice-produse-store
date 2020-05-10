@@ -118,22 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imgbin-shopify-e-commerce-logo-web-design-design-qXjMADSvFauX9EM7aNwbpi2UK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="d58f191c768aa2c0938298ca5232aed8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d58f191c768aa2c0938298ca5232aed8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="food-and-restaurant-icon-coffee-icon-coffee-shop-icon-blue-text-light-logo-electric-blue-lighting-symbol-png-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\food-and-restaurant-icon-coffee-icon-coffee-shop-icon-blue-text-light-logo-electric-blue-lighting-symbol-png-clipart.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="32132" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\32132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="257-2572499_close-shopping-cart-light-gray-shopping-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\257-2572499_close-shopping-cart-light-gray-shopping-cart3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="29-294515_food-clipart-transparent-background-food-logo-no-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\29-294515_food-clipart-transparent-background-food-logo-no-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop-icon-png-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop-icon-png-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fd80ecec48eba2a9adb76e4133905879" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fd80ecec48eba2a9adb76e4133905879.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

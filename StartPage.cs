@@ -43,5 +43,14 @@ namespace ShopOfProd
         {
             Environment.Exit(0);
         }
+
+        private void LoadPicture()
+        {
+
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

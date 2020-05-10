@@ -31,10 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnEXIT = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,23 @@
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // btnEXIT
+            // 
+            this.btnEXIT.FlatAppearance.BorderSize = 0;
+            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnEXIT.IconSize = 80;
+            this.btnEXIT.Location = new System.Drawing.Point(0, 0);
+            this.btnEXIT.Name = "btnEXIT";
+            this.btnEXIT.Rotation = 0D;
+            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
+            this.btnEXIT.TabIndex = 5;
+            this.btnEXIT.UseVisualStyleBackColor = true;
+            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -104,23 +121,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(675, 507);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // btnEXIT
-            // 
-            this.btnEXIT.FlatAppearance.BorderSize = 0;
-            this.btnEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEXIT.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnEXIT.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnEXIT.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnEXIT.IconSize = 80;
-            this.btnEXIT.Location = new System.Drawing.Point(0, 0);
-            this.btnEXIT.Name = "btnEXIT";
-            this.btnEXIT.Rotation = 0D;
-            this.btnEXIT.Size = new System.Drawing.Size(75, 82);
-            this.btnEXIT.TabIndex = 5;
-            this.btnEXIT.UseVisualStyleBackColor = true;
-            this.btnEXIT.Click += new System.EventHandler(this.btnEXIT_Click);
-            // 
             // UserOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,7 +132,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UserOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserOrders";
+            this.Text = "Заказы клиента";
             this.Load += new System.EventHandler(this.UserOrders_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

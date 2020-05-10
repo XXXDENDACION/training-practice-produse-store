@@ -123,6 +123,13 @@ namespace ShopOfProd
                 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AllProductsGuest guest = new AllProductsGuest();
+            guest.Show();
+            Hide();
+        }
     }
     static class DataId
     {
